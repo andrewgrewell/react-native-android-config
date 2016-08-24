@@ -1,3 +1,2 @@
-'use strict';
-
-module.exports = require('UnimplementedView');
+// Nothing here, just required for IOS not to choke
+module.exports = {};

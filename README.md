@@ -1,5 +1,3 @@
-# Deprecated!
+Fork of depricated `react-native-android-config` with fix for iOS
 
-Please refer to [react-native-config](https://github.com/luggg/react-native-config), supporting iOS too:
-
-https://github.com/luggg/react-native-config
+see [react-native-android-config](https://www.npmjs.com/package/react-native-android-config) for usage.

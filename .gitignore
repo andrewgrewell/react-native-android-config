@@ -1,3 +1,4 @@
+/.idea
 # OSX
 #
 .DS_Store
@@ -24,11 +25,26 @@ project.xcworkspace
 
 # Android/IJ
 #
+*.iml
 .idea
 .gradle
 local.properties
+
+# IOS
+ios/Pods/*
+ios/traces
 
 # node.js
 #
 node_modules/
 npm-debug.log
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
+
+# Intellj
+#
+*.iml
