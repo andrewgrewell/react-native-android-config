@@ -1,13 +1,20 @@
 {
   "name": "react-native-android-env",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Native bridge to Android build configs set in Gradle",
-  "keywords": ["react-native", "android", "config", "env", "config-var"],
+  "keywords": [
+    "react-native",
+    "android",
+    "config",
+    "env",
+    "config-var"
+  ],
   "homepage": "https://github.com/andrewgrewell/react-native-android-env",
   "author": "Pedro Belo",
   "files": [
     "android/",
-    "index.android.js"
+    "index.android.js",
+    "index.ios.js"
   ],
   "license": "MIT"
 }
