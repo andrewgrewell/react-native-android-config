@@ -18,7 +18,7 @@ public class ReactConfigPackage implements ReactPackage {
         );
     }
 
-    @Override
+    //DEPRECATED RN 0.46+
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
