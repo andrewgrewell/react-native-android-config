@@ -18,6 +18,7 @@ import java.lang.IllegalAccessException;
 import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.regex.*;
 
 public class ReactConfigModule extends ReactContextBaseJavaModule {
   public ReactConfigModule(ReactApplicationContext reactContext) {
@@ -32,9 +33,16 @@ public class ReactConfigModule extends ReactContextBaseJavaModule {
   @Override
   public Map<String, Object> getConstants() {
     final Map<String, Object> constants = new HashMap<>();
-    Log.d("Application Context: ", getReactApplicationContext());
     try {
-      Class clazz = Class.forName(getReactApplicationContext().getPackageName() + ".BuildConfig");
+      String packageName = getReactApplicationContext().getPackageName();
+      Pattern p = Pattern.compile("com.hthunative.(.*)");
+      Matcher m = p.matcher(packageName);
+      String suffix = "";
+      if (m.find()) {
+        suffix = "." + m.group(1);
+      }
+
+      Class clazz = Class.forName(packageName + suffix + ".BuildConfig");
       Field[] fields = clazz.getDeclaredFields();
       for(Field f: fields) {
         try {
