@@ -32,7 +32,7 @@ public class ReactConfigModule extends ReactContextBaseJavaModule {
   @Override
   public Map<String, Object> getConstants() {
     final Map<String, Object> constants = new HashMap<>();
-    Log.d("Application Context: ", getReactApplicationContext())
+    Log.d("Application Context: ", getReactApplicationContext());
     try {
       Class clazz = Class.forName(getReactApplicationContext().getPackageName() + ".BuildConfig");
       Field[] fields = clazz.getDeclaredFields();
