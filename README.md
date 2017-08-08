@@ -1,6 +1,3 @@
-Fork of depricated `react-native-android-config` with fix for iOS
-
-the original package had no index.ios.js so iOS was choking.
 
 ### Usage
 Declare config variables in Gradle, under android/app/build.gradle:

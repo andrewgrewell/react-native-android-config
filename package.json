@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-env",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React Native bridge to Android build configs set in Gradle",
   "keywords": [
     "react-native",
